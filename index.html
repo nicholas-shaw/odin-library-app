@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body onload="displayLibrary()">
+    <div class="container">
+        <header class="text-center">
+            <h1>Library App</h1>
+            <p>Here are all the books currently in the library. This is pre-filled with 5 sample books.</p>
+        </header>
+
+        <section class="card">
+            <h2>My Book Library</h2>
+            <div id="library"></div>
+        </section>
+        <div class="addBookContainer">
+            <form id="addBookForm" onsubmit="event.preventDefault(); addBookToLibrary(document.getElementById('formTitle').value, document.getElementById('formAuthor').value, document.getElementById('formPages').value, document.getElementById('formCoverUrl').value, document.getElementById('formRead').checked); this.reset();displayLibrary();">
+                <h2>Add a New Book</h2>
+                <input type="text" id="formTitle" placeholder="Title" required>
+                <input type="text" id="formAuthor" placeholder="Author" required>
+                <input type="number" id="formPages" placeholder="Pages" required>
+                <input type="text" id="formCoverUrl" placeholder="Cover Image URL (optional)">
+                <label><input type="checkbox" id="formRead"> Read</label>
+                <button class="button-primary" type="submit">Add Book</button>
+            </form> 
+        </div>
+
+        <footer class="text-center">
+            <p>Nicholas Shaw. Library App for The Odin Project.</p>
+        </footer>
+    </div>
+</body>
+</html>
