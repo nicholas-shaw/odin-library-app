@@ -45,7 +45,7 @@ function displayLibrary() {
     const bookElement = document.createElement("div");
     bookElement.classList.add("book");
     bookElement.innerHTML = `
-      ${book.coverUrl ? `<img src="${book.coverUrl}" alt="Cover of ${book.title}">` : ""}
+      ${book.coverUrl ? `<img src="${book.coverUrl}" alt="Cover of ${book.title}">` : `<div class="cover-placeholder">No cover available</div>`}
       <h3>${book.title}</h3>
       <p><b>Author:</b> ${book.author}</p>
       <p><b>Pages:</b> ${book.pages}</p>
