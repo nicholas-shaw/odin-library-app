@@ -1,6 +1,7 @@
 # odin-library-app
 
 A small client-side library app built for The Odin Project JavaScript lesson.
+Available to view at [https://nicholas-shaw.github.io/odin-library-app](https://nicholas-shaw.github.io/odin-library-app/)
 
 ## Project contents
 
